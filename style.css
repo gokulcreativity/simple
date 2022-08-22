@@ -1,0 +1,480 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+    body{
+    font-family: sans-serif;
+  }
+  .image{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(image/nature.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 20px;
+    line-height: 80px;
+}
+.line{
+    width: 150px;
+    height: 2px;
+    background: red;
+    margin-left: 20px;
+    line-height: 80px;
+    margin-top: -20px;
+    display: none;
+}
+  nav{
+    width: 100%;
+    height: 80px;
+  }
+  nav ul{
+     float: right;
+     margin-right: 25px;
+  }
+  nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  nav ul li a{
+    font-size: 23px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: relative;
+  }
+  nav ul li a::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width:100%;
+    background: #fff;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+  }
+  nav ul li a:hover::before{
+    transform: scaleX(1);
+  }
+  nav ul li a:hover{
+    color: red;
+  }
+  .desing{
+    padding: 10px 15px;
+    border-radius: 17px;
+    color:red;
+}
+.alt{
+    margin-top: 220px;
+    margin-left: 33%;
+    }
+header h3{
+    font-size: 29px;
+    color: #fff;
+    margin-left: 19px;
+    margin-bottom: 10px;
+}
+.lines{
+    width:190px;
+    height: 3px;
+    background: red;
+    margin-left: 12%;
+    margin-bottom: 35px;
+}
+header h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+header a{
+    color:#fff;
+    padding: 10px 15px;
+    background: red;
+    margin-left: 15%;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+header a:hover{
+    color:red;
+    background: black;
+}
+b{
+    color:red;
+}
+.back,.bar{
+    float: right;
+    font-size: 35px;
+    color:#fff;
+    margin-right: 25px;
+    line-height: 80px;
+    padding: 5px 5px;
+    display: none;
+  }
+  #box{
+    display: none;
+  }
+  section{
+    width: 80%;
+    margin: 80px auto;
+  }
+  .strike{
+    width: 350px;
+    height: 3px;
+    background: red;
+    margin-left: 35%;
+    margin-top: 15px;
+    margin-bottom: 30px ;
+
+  }
+  .heading h1{
+    text-align: center;
+    font-size: 40px;
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 20px auto;
+  }
+  .row .coloumn{
+    width: 100%;
+  }
+  img{
+    width:90% ;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .row h4{
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .row p{
+    font-size: 20px;
+    color:rgb(136, 109, 109);
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 0 50px;
+  }
+  .row a{
+    color:#fff;
+    padding: 8px 15px;
+    background: red;
+    margin-left: 35%;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.row a:hover{
+  background: black;
+  color: red;
+}
+.event{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.content{
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url(image/look.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+}
+.explore{
+  margin-left: 8%;
+}
+.explore h1{
+  font-size: 70px;
+  color:#fff;
+  margin-top: -20px;
+  margin-bottom: 15px;
+}
+.explore .lines{
+  width:50%;
+  height: 3px;
+  background: red;
+  margin-left: 12%;
+  margin-bottom: 35px;
+}
+.explore p{
+  font-size: 17px;
+  color:#fff;
+  margin-bottom: 35px;
+}
+.explore  a{
+  color:#fff;
+  padding: 10px 19px;
+  background: red;
+  margin-left: 25%;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.explore a:hover{
+  background: black;
+  color: red;
+}
+.gallery-col{
+  width: 40%;
+}
+.image-col{
+  width: 60%;
+}
+.gallery .rows .coloumn {
+  width:50%;
+}
+.gallery .image-gallery{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 60%;
+  margin-top: -35%;
+}
+.image-gallery img{
+  width: 200px;
+  margin: 5px;
+}
+.rows h3{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.rows p{
+  font-size: 19px;
+  margin-bottom: 70px;
+  margin-left: -50px;
+  line-height: 40px;
+}
+.rows .lines{
+  width: 250px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+}
+.rows a{
+  color:#fff;
+  padding: 10px 30px;
+  background: black;
+  color: red;
+  font-size: 35px;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+footer{
+  width: 100%;
+  height: 20vh;
+  color: #fff;
+  background: rgb(68, 59, 59);
+  font-weight: bold;
+}
+footer p{
+ text-align: center;
+font-size: 28px;
+margin:20px auto;
+margin-bottom: -30px;
+}
+footer h2{
+  font-size: 15px;
+  float: right;
+}
+img{
+  transition: transform 0.3s ease;
+}
+img:hover{
+  transform: scale(1.5);
+}
+  @media(max-width:852px){
+    .title{
+        font-size: 25px;
+    }
+    nav ul li a{
+        color:#fff;
+        margin-right: 20px;
+        padding:8px 12px;
+        font-size: 18px;
+        font-weight: bold;    
+    }
+    .alt{
+        margin-top: 200px;
+        margin-left: 25%;
+        }
+        header h3{
+            font-size: 24px;
+        }
+        header h1{
+            font-size: 40px;
+        }
+
+} 
+  @media(max-width:590px){
+   
+    .bar{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      background: rgb(97, 83, 83);
+      width: 100%;
+      height: 100vh;
+      top: 70px;
+      padding: 25px 0;
+      left:-100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 59px 0;
+      line-height: 33px;
+    }
+    nav ul li a:hover{
+        color: red;
+        } 
+    #box:checked ~ ul{
+      left:0;
+  }
+  #box:checked ~ .bar{
+    display: none;
+  }
+  #box:checked ~ .back{
+    display: block;
+  }
+  .desing{
+    padding: 10px 15px;
+    border-radius: 17px;
+    background: transparent;
+    color:red;}
+  .line{
+    display: block;
+  }
+  .alt{
+    margin-top: 200px;
+    margin-left: 15%;
+  }
+  header a{
+    color:#fff;
+    padding: 8px 15px;
+    margin-left: 25%;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+  .strike{
+    width: 350px;
+    height: 3px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+  }
+  .row p{
+    font-size: 16px;
+    color:rgb(136, 109, 109);
+    margin-bottom: 30px;
+    text-align: justify;
+    padding: 0 50px;
+  }
+  .row a{
+    color:#fff;
+    padding: 8px 15px;
+    background: red;
+    margin-left: 35%;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom:10%;
+}
+.explore h1{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.explore .lines{
+  margin-left: 1%;
+}
+.explore p{
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+.explore  a{
+  margin-left: 1%;
+}
+.rows{
+  display: flex;
+  flex-direction: column;
+}
+.gallery-col{
+  width: 40%;
+}
+.image-col{
+  width: 50%;
+}
+.gallery .rows .coloumn {
+  width:50%;
+}
+.gallery .image-gallery{
+  width: 100%;
+  display: flex;
+  margin-left: 0;
+  margin-top:10px
+}
+.image-gallery img{
+  width: 100%;
+  margin: 25px;
+}
+.rows h3{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.rows p{
+  font-size: 19px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  line-height: 30px;
+}
+.rows .lines{
+  width: 300px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+}
+.rows a{
+  color:#fff;
+  padding: 10px 30px;
+  background: black;
+  color: red;
+  font-size: 35px;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+footer{
+  width: 100%;
+  height: 10vh;
+  color: #fff;
+  background: rgb(68, 59, 59);
+  font-weight: bold;
+}
+footer p{
+ text-align: center;
+font-size: 18px;
+margin:20px auto;
+margin-bottom:0px;
+}
+footer h2{
+  font-size: 12px;
+  float: right;
+}
+}

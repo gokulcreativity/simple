@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background:black;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+     color: #fff;
+     padding: 20px 30px;
+     animation: header 2s ease-in-out;
+}
+@keyframes header{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+nav li{
+    list-style: none;
+     display: inline-block;
+     margin-top: 20px;
+     margin-left:30px;
+     font-weight: bold;
+}
+nav li:hover{
+    background:red;
+}
+.main{
+    width: 100%;
+    display: flex;
+}
+.content{
+     width: 50%;
+    margin-left: 8%;
+    margin-top: 8%;
+    color:#fff;
+    overflow: hidden;
+    animation: content 1s ease-in-out;
+}
+@keyframes content{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+.content h1{
+    font-size: 130px;
+    font-family:cursive;
+    margin-top: 0%;
+}
+.content h1 b{
+    color: red;
+    font-family:cursive;
+}
+.content h3{
+    font-size:50px ;
+    font-family: sans-serif;
+    margin-bottom: 0%;
+}
+.content p{
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-bottom: 3%;
+}
+button{
+    padding: 20px 30px;
+    border-radius: 25px;
+    background:transparent;
+    color:red;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: 23px;
+    border: 1px solid red;
+}
+span{
+    color:red;
+}
+button:hover{
+     background-color:#fff;
+}
+.image{
+    width: 50%;
+    margin-top: 9%;
+    margin-left: 11%;
+    z-index: -1;
+}
+img{
+    width: 40rem;
+    animation: car 4s infinite;
+}
+@keyframes car{
+    0%{
+        transform:translateX(100%);
+    }
+    100%{
+        transform: translateX(-250%);
+    }
+}
+@media screen and (max-width:1200px){
+    .content{
+        width: 100%;
+        text-align: center;
+}
+.image{
+    width: 100%;
+    position: absolute;
+    bottom:-2%;
+    display:flex;
+    justify-content: center;
+}
+img{
+    width: 30rem;
+}
+}
+@media screen and (max-width:576px){
+    .content{
+        width: 100%;
+        text-align: center;
+}
+.content h1,h3,p{
+    margin-bottom: 4%;
+}
+.image{
+    width: 100%;
+    position: absolute;
+    bottom:-2%;
+    display:flex;
+    justify-content: center;
+}
+img{
+    width: 29rem;
+}
+.content h1{
+    font-size: 120px;
+    font-family:cursive;
+    margin-bottom:10%;
+    margin-top: 0;
+}
+.content h1 b{
+    color: red;
+    font-family:cursive;
+}
+.content h3{
+    font-size:40px ;
+    font-family: sans-serif;
+}
+.content p{
+    font-size: 28px;
+    font-family: sans-serif;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    background:black;
+    color:red;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+}
